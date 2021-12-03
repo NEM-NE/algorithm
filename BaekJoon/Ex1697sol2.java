@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class Main {
+public class Ex1697sol2 {
 
 	static boolean[] visited;
 	static int min;

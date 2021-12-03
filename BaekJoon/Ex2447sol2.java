@@ -1,7 +1,6 @@
-import java.util.*;
 import java.io.*;
 
-public class Ex2447 {
+public class Ex2447sol2 {
 	// 04 : 25
 	
 	static char[][] output;

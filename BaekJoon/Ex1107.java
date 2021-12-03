@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class Main {
+public class Ex1107 {
 	
 	static int cal(ArrayList<Integer> list, int channel, int cnt) {
 	

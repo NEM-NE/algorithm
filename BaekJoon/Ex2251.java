@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class Main {
+public class Ex2251 {
 	
 	static class Bucket{
 		int A, B, C;

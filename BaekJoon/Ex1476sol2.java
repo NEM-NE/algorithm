@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class Main {
+public class Ex1476sol2 {
 	
 	// 6 : 20 5min
 	public static void main(String[] args) throws IOException {

@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class Main {
+public class Ex9019sol3 {
 	
 	static class Register {
 		int num;

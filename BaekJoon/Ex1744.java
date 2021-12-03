@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class Main {
+public class Ex1744 {
 	
 	// 11 : 25 81
 	public static void main(String[] args) throws IOException {

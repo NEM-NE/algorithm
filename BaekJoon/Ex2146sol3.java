@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 
-public class Main {
+public class Ex2146sol3 {
 	
 	static class Node {
 		int x, y;

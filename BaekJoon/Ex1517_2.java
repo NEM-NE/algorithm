@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 
-public class Main {
+public class Ex1517_2 {
 
 	static long[] list;
 	static long[] temp;

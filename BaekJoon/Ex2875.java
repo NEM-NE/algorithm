@@ -1,9 +1,9 @@
-package BaekJoon;
+
 
 import java.io.*;
 import java.util.*;
 
-public class Main{
+public class Ex2875{
 	// 10 : 57
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

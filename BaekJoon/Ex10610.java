@@ -1,11 +1,8 @@
 import java.util.*;
-
-import javax.sound.sampled.ReverbType;
-
 import java.io.*;
 
 
-public class Main {
+public class Ex10610 {
 	
 	
 	// 11 : 29

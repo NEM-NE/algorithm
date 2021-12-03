@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Main{
+public class Ex2261{
 	// 8 : 01
 	static class Point{
 		int x, y;
@@ -49,7 +49,6 @@ public class Main{
 		Collections.sort(band, new Comparator<Point>() {
 			@Override
 			public int compare(Point o1, Point o2) {
-				// TODO Auto-generated method stub
 				return o1.y - o2.y;
 			}
 		});

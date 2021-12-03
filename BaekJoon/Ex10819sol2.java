@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class Main {
+public class Ex10819sol2 {
 	static int max;
 	
 	static int cal(int[] ary) {

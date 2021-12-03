@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class Main {
+public class Ex10971 {
 	
 	static int min;
 	static int[][] map;

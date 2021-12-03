@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class Main {
+public class Ex1525 {
 	
 	static HashMap<String, Integer> map;
 	static int[][] ary;

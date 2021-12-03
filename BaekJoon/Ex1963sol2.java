@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class Main {
+public class Ex1963sol2 {
 	
 	static boolean[] isPrime;
 	static boolean[] visited;

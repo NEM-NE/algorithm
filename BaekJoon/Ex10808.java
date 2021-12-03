@@ -1,7 +1,6 @@
-package BaekJoon;
+
 
 import java.io.*;
-import java.util.*;
 
 public class Ex10808 {
 	// 6 : 46

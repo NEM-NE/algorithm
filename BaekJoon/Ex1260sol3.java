@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 
-public class Main {
+public class Ex1260sol3 {
 	
 	static boolean[] visited;
 	static ArrayList<ArrayList<Integer>> list;

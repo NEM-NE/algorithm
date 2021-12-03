@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class Main {
+public class Ex1107sol2 {
 	
 	static ArrayList<Integer> list;
 	

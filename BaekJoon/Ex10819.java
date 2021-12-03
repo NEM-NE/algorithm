@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class Main {
+public class Ex10819 {
 	static int max = 0;
 	
 	static void permutation(int[] arr, int depth, int n, int r) {

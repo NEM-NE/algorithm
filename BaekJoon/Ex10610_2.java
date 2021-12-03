@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 
-public class Main {
+public class Ex10610_2 {
 	
 	// 10 : 37
 		
