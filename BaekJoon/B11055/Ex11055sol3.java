@@ -1,12 +1,12 @@
-
+package B11055;
 
 import java.io.*;
 import java.util.*;
 
-public class Ex11055sol2 {
-	// 10 : 54
+public class Ex11055sol3 {
+	// 3 : 16
 	
-	static int[] dp = new int[1001];
+	static int[] dp = new int[100001];
 	
 	public static void main(String[] args) throws IOException {		
 		Scanner scanner = new Scanner(System.in);
@@ -18,14 +18,13 @@ public class Ex11055sol2 {
 			ary[i] = scanner.nextInt();
 		}
 		
-
 		for(int i = 1; i < tc+1; i++) {
+			dp[i] = ary[i];
 			for(int j = 1; j < i; j++) {
 				if(ary[i] > ary[j]) {
-					dp[i] = Math.max(dp[i], dp[j]);
+					dp[i] = Math.max(dp[i], dp[j] + ary[i]);
 				}
 			}
-			dp[i] += ary[i];
 		}
 		
 		int max = 0;
@@ -34,6 +33,5 @@ public class Ex11055sol2 {
 		}
 		
 		System.out.println(max);
-		
 	}
 }
