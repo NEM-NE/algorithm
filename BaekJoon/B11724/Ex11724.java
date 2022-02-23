@@ -1,20 +1,20 @@
-
+package B11724;
 
 import java.io.*;
 import java.util.*;
 
-public class Ex11724sol2 {
-	// 10 : 54	
+public class Ex11724 {
+	// 09 : 58	
 	static int[][] graph;
 	static boolean[] visited;
+	static Stack<Integer> stack = new Stack<>();
 	
 	static void dfs(int x) {
 		visited[x] = true;
+		stack.remove((Integer) x);
 		
 		for(int i = 0; i < graph[x].length; i++) {
-			if(!visited[i] && graph[x][i] == 1) {
-				dfs(i);
-			}
+			if(!visited[i] && graph[x][i] == 1) dfs(i);
 		}
 	}
 	
@@ -23,15 +23,14 @@ public class Ex11724sol2 {
 		StringBuilder sb = new StringBuilder();
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
-		int v = Integer.parseInt(st.nextToken());
-		int e = Integer.parseInt(st.nextToken());
+		int n = Integer.parseInt(st.nextToken());
+		int m = Integer.parseInt(st.nextToken());
+		graph = new int[n+1][n+1];
+		visited = new boolean[n+1];
 		
-		graph = new int[v+1][v+1];
-		visited = new boolean[v+1];
-		
-		for(int i = 0; i < e; i++) {
+		//create grpah
+		for(int i = 0; i < m; i++) {
 			st = new StringTokenizer(br.readLine());
-			
 			int a = Integer.parseInt(st.nextToken());
 			int b = Integer.parseInt(st.nextToken());
 			
@@ -39,10 +38,17 @@ public class Ex11724sol2 {
 			graph[b][a] = 1;
 		}
 		
+		// align list
+		for(int i = 1; i <= n; i++) {
+			stack.push(i);
+		}
+		
+		// count component
 		int cnt = 0;
-		for(int i = 1; i <= v; i++) {
-			if(!visited[i]) {
-				dfs(i);
+		while(!stack.isEmpty()) {
+			int index = stack.pop();
+			if(index != 0) {
+				dfs(index);
 				cnt++;
 			}
 		}
