@@ -1,49 +1,52 @@
-
+package B2805;
 
 import java.io.*;
 import java.util.*;
 
-public class Ex2805sol2 {
-	// 5 : 13
+public class Ex2805 {
+	// 10 : 20
 	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringBuilder sb = new StringBuilder();
 		StringTokenizer st = new StringTokenizer(br.readLine());
-		
+
 		int n = Integer.parseInt(st.nextToken());
-		int k = Integer.parseInt(st.nextToken());
+		int m = Integer.parseInt(st.nextToken());
 		
-		int[] tree = new int[n];
-		int max = 0;
-		int min = 0;
+		int[] trees = new int[n];
 		
 		st = new StringTokenizer(br.readLine());
 		for(int i = 0; i < n; i++) {
-			tree[i] = Integer.parseInt(st.nextToken());
-			max = Math.max(tree[i], max);
+			trees[i] = Integer.parseInt(st.nextToken());
 		}
 		
-		while(min <= max) {
+		int max = 1000000000;
+		int min = 0;
+		int ans = 0;
+		while((min+1) < max) {
 			int mid = (max + min) / 2;
 			
 			long sum = 0;
 			for(int i = 0; i < n; i++) {
-				if(tree[i] > mid) sum += tree[i] - mid;
+				if(trees[i] > mid) sum += trees[i] - mid;
 			}
 			
-			if(sum < k) {
-				max = mid - 1;
+			if(sum == m) {
+				ans = mid;
+				break;
+			}
+			
+			if(sum > m) {
+				min = mid;
+				ans = mid;
 			}else {
-				min = mid + 1;
+				max = mid;
 			}
 		}
-		
-		sb.append(max);
+		sb.append(ans);
 		System.out.println(sb);
 		
-		
-
 	}
 
 }
