@@ -13,7 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Codility" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.8 (Algorithm_Practice)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="11" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
