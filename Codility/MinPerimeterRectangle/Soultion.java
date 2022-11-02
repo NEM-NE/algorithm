@@ -6,7 +6,7 @@ import java.util.*;
 // you can write to stdout for debugging purposes, e.g.
 // System.out.println("this is a debug message");
 
-public class Solution {
+class Solution {
   public int solution(int N) {
     int result = 2 * (N + 1);
 
